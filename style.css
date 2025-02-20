@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-image: url("./assets/hero_bg_3.webp");
+  background-size: cover;
+  background-position: top;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 6rem;
+}
+.navbar img {
+  max-width: 150px;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #eff1f9;
+  border-radius: 7rem;
+  position: absolute;
+  top: 2rem;
+  width: 100%;
+}
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  display: none;
+}
+.navbar ul a {
+  text-decoration: none;
+  color: black;
+}
+.navbar ul li {
+  list-style: none;
+}
+.navbar button {
+  background: rgb(87, 118, 250);
+  background: linear-gradient(
+    90deg,
+    rgba(87, 118, 250, 1) 0%,
+    rgba(99, 54, 224, 1) 100%
+  );
+  border: none;
+  padding: 1rem 2rem;
+  color: white;
+  border-radius: 2rem;
+}
+.hero {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.hero h1 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #141d38;
+  max-width: 800px;
+}
+.hero h1 span {
+  color: #5484ff;
+}
+.hero p {
+  color: #737887;
+  font-weight: 600;
+  max-width: 500px;
+  line-height: 1.6rem;
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero h1 {
+    font-size: 5rem;
+  }
+  .hero p {
+    font-size: 1.3rem;
+  }
+  .navbar ul {
+    display: flex;
+  }
+}
